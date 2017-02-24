@@ -1,0 +1,1067 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 12px "AcFun Symbol","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei",STHeiti,sans-serif;;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+em{
+    font-style: normal;
+}
+b{
+    font-weight: normal;
+}
+img{
+    border:none;
+    vertical-align: top;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix{zoom:1}
+.w1160{
+    width: 1160px;
+    margin:0 auto;
+}
+.AcFun-head{
+    width: 100%;
+}
+.AcFun-top{
+    height: 47px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: #ffffff;
+    box-shadow: 0 6px 6px rgba(0,0,0,.1);
+}
+.AcFun{
+    height: 47px;
+}
+.AcFun h1{
+    width: 86px;
+    height: 26px;
+    background: url("../AcFun-image/logo.png")no-repeat;
+    text-indent: 9999em;
+    float: left;
+    margin-top: 8px;
+}
+.AcFun-log{
+    float: right;
+    margin-right: -10px;
+}
+.AcFun-log .AcFun-log-in{
+    width: 57px;
+}
+.AcFun-log>li{
+    float: left;
+    line-height: 47px;
+    padding: 0 10px;
+    width: 17px;
+    cursor: pointer;
+}
+.AcFun-log>li a{
+    color: #333333;
+}
+.AcFun-log>li a:hover{
+    color: #fd4c5d;
+}
+.AcFun-log>li a i{
+    width: 17px;
+    height: 17px;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -75px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.AcFun-log .AcFun-log-clock a i:hover{
+    background-position: -45px -75px;
+}
+.AcFun-log .AcFun-log-cast a i{
+    background-position: -15px -105px;
+}
+.AcFun-log .AcFun-log-cast a i:hover{
+    background-position: -45px -105px;
+}
+.AcFun-log .AcFun-log-star a i{
+    background-position: -15px -135px;
+}
+.AcFun-log .AcFun-log-star a i:hover{
+    background-position: -45px -135px;
+}
+.AcFun-log .AcFun-log-clock .AcFun-log-clock-bud{
+    width: 192px;
+    height: 111px;
+    display: none;
+    box-shadow: 0 6px 6px rgba(0,0,0,.1);
+}
+.AcFun-log .AcFun-log-clock .AcFun-log-clock-bud p{
+    padding: 1px 0 15px 6px;
+    line-height: 20px;
+    background: #ffffff;
+}
+.AcFun-log .AcFun-log-clock .AcFun-log-clock-bud p span{
+    color: #b7b7b7;
+}
+.AcFun-log .AcFun-log-clock .AcFun-log-clock-bud .AcFun-log-clock-bud-more{
+    text-align: center;
+    color: #555555;
+    background: #f7f7f7;
+    line-height: 36px;
+}
+.AcFun-log .AcFun-log-clock .AcFun-log-clock-bud .AcFun-log-clock-bud-more:hover{
+    background: #e4e4e4;
+    cursor: pointer;
+}
+.AcFun-log .AcFun-log-clock:hover .AcFun-log-clock-bud{
+    display: block;
+}
+.AcFun-log .AcFun-log-cast .AcFun-log-cast-send{
+    width: 100px;
+    height: 75px;
+    margin-right: 20px;
+    box-shadow: 0 7px 7px rgba(0,0,0,.1);
+    display: none;
+    border-radius: 0 0 2px 2px;
+    background: #ffffff;
+}
+.AcFun-log .AcFun-log-cast:hover .AcFun-log-cast-send{
+    display: block;
+}
+.AcFun-log .AcFun-log-cast .AcFun-log-cast-send li{
+    line-height: 30px;
+    padding-left: 11px;
+}
+.AcFun-log .AcFun-log-cast .AcFun-log-cast-send .AcFun-log-cast-send-video{
+    padding-top: 6px;
+}
+.AcFun-dow{
+    float: right;
+    width: 80px;
+    line-height: 47px;
+    padding-right: 10px;
+}
+.AcFun-dow a{
+    color: #333333;
+}
+.AcFun-dow a:hover{
+    color: #fd4c5d;
+}
+.AcFun-dow a i{
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3px;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -45px;
+}
+.AcFun-dow .AcFun-dow-app{
+    display: none;
+}
+.AcFun-dow .AcFun-dow-app img{
+    width: 200px;
+    height: 219px;
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 6px 6px rgba(0,0,0,.3);
+}
+.AcFun-dow:hover .AcFun-dow-app{
+    display: block;
+}
+.AcFun-import{
+    float: right;
+    padding: 7px 141px 0 0;
+}
+.AcFun-import input[type=text]{
+    width: 315px;
+    height: 30px;
+    text-indent: 1em;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+    float: left;
+    outline:none;
+}
+.AcFun-import .AcFun-import-but{
+    display: inline-block;
+    position: relative;
+}
+.AcFun-import .AcFun-import-but input[type=button]{
+    width: 46px;
+    height: 32px;
+    border: none;
+    background: #fd4c5d;
+    float: left;
+    outline:none;
+    border-radius: 0 3px 3px 0;
+}
+.AcFun-import .AcFun-import-but i{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -15px;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    cursor: pointer;
+}
+.AcFun-import .AcFun-import-but:hover input[type=button]{
+    background: #eb4556;
+    cursor: pointer;
+}
+.AcFun-dog{
+    width: 100%;
+    height: 179px;
+    padding-top: 47px;
+    /*background-size:cover;*/
+    /*background-attachment: fixed;*/
+}
+.AcFun-dog a img{
+    width:100%;
+    height: 179px;
+    background-size:100%;
+    /*position: relative;*/
+    /*right: 276px;*/
+}
+.AcFun-home{
+    width: 100%;
+    background: #ffffff;
+    height: 46px;
+}
+.AcFun-home .AcFun-home-page>li{
+    float: left;
+    width: 40px;
+    line-height: 46px;
+    margin-right: 35px;
+}
+.AcFun-home .AcFun-home-page>li a{
+    font-size: 14px;
+    color: #333333;
+    height: 40px;
+    padding: 0 6px;
+}
+.AcFun-home .AcFun-home-page .AcFun-home-page-business{
+    height: 43px;
+    border-bottom: 3px solid #fd4c5d;
+}
+.AcFun-home .AcFun-home-page .AcFun-home-page-business a,.AcFun-home .AcFun-home-page>li a:hover{
+    color: #fd4c5d;
+}
+.AcFun-home .AcFun-home-full{
+    line-height: 46px;
+    float: right;
+}
+.AcFun-home .AcFun-home-full a{
+    font-size: 14px;
+    color: #333333;
+}
+.AcFun-home .AcFun-home-full a:hover{
+    color: #fd4c5d;
+}
+.AcFun-home .AcFun-home-full a i{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -165px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.AcFun-content{
+    width: 100%;
+    height: 5913px;
+    background: #f8f8f8;
+}
+.stand{
+    padding-top: 20px;
+    height: 260px;
+}
+.stand-first{
+    float: left;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.stand-first a img{
+    width: 452px;
+    height: 260px;
+    background: url("../AcFun-image/Liam.jpg")no-repeat;
+}
+.stand-first p{
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    color: #ffffff;
+}
+.stand-first ol{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.stand-first ol>li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #f4f3f5;
+    border-radius: 50%;
+    background: #ffffff;
+    float: left;
+    margin-left: 8px;
+}
+.stand-first ol .stand-first-red{
+    width: 16px;
+    height: 8px;
+    background: #fd4c5d;
+    border:none;
+    border-radius: 4px;
+}
+.stand-num .stand-num-lain{
+    float: right;
+    margin-left: 20px;
+}
+.stand-num .stand-num-lain a img{
+    width: 452px;
+    height: 120px;
+}
+.stand-num ul>li{
+    position: relative;
+    float: left;
+    margin:20px 0 0 20px;
+    width: 216px;
+    height: 120px;
+}
+.stand-num ul .stand-num-kkx{
+    margin-top:0;
+}
+.stand-num ul>li img{
+    width: 216px;
+    height: 120px;
+}
+.stand-num ul>li>p{
+    color: #ffffff;
+    position: absolute;
+    bottom: 6px;
+    left: 11px;
+}
+.stand-num ul>li .stand-num-kkx-layer{
+    width: 216px;
+    height: 120px;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    display: none;
+}
+.stand-num ul>li .stand-num-kkx-layer p{
+    display: block;
+    margin: 14px 0 0 11px;
+}
+.stand-num ul>li .stand-num-kkx-layer .stand-num-kkx-layer-name span{
+    display: block;
+    margin: 36px 0 0 11px;
+}
+.stand-num ul>li .stand-num-kkx-layer .stand-num-kkx-layer-name .stand-num-kkx-layer-name-tri{
+    margin: 10px 0 0 11px;
+}
+.stand-num ul>li .stand-num-kkx-layer .stand-num-kkx-layer-name .stand-num-kkx-layer-name-tri i{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url("../AcFun-image/Sprites.png")no-repeat -45px -420px;
+    vertical-align: middle;
+}
+.stand-num ul>li .stand-num-kkx-layer .stand-num-kkx-layer-name .stand-num-kkx-layer-name-tri .stand-num-kkx-layer-name-tri-squ{
+    margin-left: 33px;
+    background-position: -45px -450px;
+}
+.stand-num ul>li .stand-num-kkx-layer .stand-num-kkx-layer-name .stand-num-kkx-layer-name-tri b{
+    padding-left: 6px;
+}
+.stand-num ul>li:hover .stand-num-kkx-layer{
+    display: block;
+}
+.stand-nav{
+    height: 179px;
+}
+.stand-left{
+    margin-top: 36px;
+}
+.stand-left h3,.stand-day .stand-left>b{
+    font-size: 18px;
+}
+.stand-day .stand-left>b{
+    display: inline-block;
+    padding-top: 9px;
+}
+.stand-left h3 img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    padding-right: 16px;
+}
+.stand-left h3 span{
+    color: #999999;
+    padding-left: 15px;
+}
+.stand-big ul{
+    width: 900px;
+    height: 129px;
+    padding-top: 10px;
+    float: left;
+}
+.stand-big ul>li{
+    float: left;
+    padding-right: 20px;
+}
+.stand-big ul>li .stand-fac{
+    width: 160px;
+    height: 90px;
+    position: relative;
+}
+.stand-big ul>li .stand-fac img{
+    width: 160px;
+    height: 90px;
+}
+.stand-big ul>li .stand-fac .stand-fac-emp,.stand-fac-emb,.stand-fac-emc{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 40px;
+    height: 20px;
+    background: rgba(0,0,0,.6);
+}
+.stand-big ul>li .stand-fac div b{
+    display: inline-block;
+    font-size: 14px;
+    color: #fdba46;
+    padding: 3px 0 0 27px;
+}
+.stand-big ul>li .stand-fac .stand-fac-emb b{
+    color: #e8edee;
+}
+.stand-big ul>li .stand-fac .stand-fac-emc b{
+    color: #fd8119;
+}
+.stand-big ul>li .stand-fac i{
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 14px;
+    height: 12px;
+    display: block;
+    background: url("../AcFun-image/Sprites.png")-15px -195px;
+}
+.stand-big ul>li .stand-fac .stand-fac-emb i{
+    background-position:-15px -225px;
+}
+.stand-big ul>li .stand-fac .stand-fac-emc i{
+    background-position: -15px -255px;
+}
+.stand-big ul>li .stand-fac .stand-fac-grey{
+    width: 160px;
+    height: 90px;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.stand-big ul>li .stand-fac .stand-fac-grey span{
+    color: #ffffff;
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+}
+.stand-big ul>li .stand-fac:hover .stand-fac-grey{
+    display: block;
+    cursor: pointer;
+}
+.stand-big ul>li .stand-stroll a{
+    color: #333333;
+    width: 160px;
+    display: block;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 19px;
+    padding-top: 2px;
+}
+.stand-big ul>li .stand-stroll p{
+    width: 160px;
+}
+.stand-big ul>li .stand-stroll p b{
+    font-size: 14px;
+    color: #f9bc00;
+    float: right;
+}
+.stand-big ul>li .stand-stroll p i{
+    float: right;
+    display: inline-block;
+     width: 14px;
+     height: 14px;
+    margin-right: 5px;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -285px;
+    vertical-align: middle;
+ }
+.stand-big ul>li .stand-stroll p a{
+    float: left;
+    color: #999999;
+    width: 102px;
+}
+.stand-big ul>li .stand-stroll a:hover{
+    color: #fd4c5d;
+}
+.stand-big .stand-big-Olympic img{
+    padding-top: 10px;
+    width: 260px;
+    height: 128px;
+    float: right;
+}
+.stand-banana{
+    height: 5318px;
+}
+.stand-banana .stand-left{
+    width: 880px;
+    height: 40px;
+}
+.stand-banana .stand-left h3{
+    float: left;
+}
+.stand-banana .stand-left a{
+    margin-top: 9px;
+    width: 46px;
+    height: 24px;
+    float: right;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+}
+.stand-banana .stand-left .stand-left-sun{
+    color: #fd4c5b;
+    background: #f9e7e9;
+}
+.stand-banana .stand-big{
+    width: 880px;
+    height: 287px;
+}
+.stand-banana .stand-big ul{
+    float: left;
+}
+.stand-banana .stand-big ul>li{
+    margin-bottom: 21px;
+}
+.stand-west{
+    width: 880px;
+    height: 495px;
+    float: left;
+}
+.stand-west .stand-spirit img{
+    width: 880px;
+    height: 100px;
+    margin-top: 19px;
+}
+.stand-day{
+    width: 260px;
+    height: 459px;
+    float: right;
+    margin-top: 36px;
+}
+.AcFun-content .stand-banana .war-day .stand-left h3:hover{
+    color: #fd4c5d;
+}
+.stand-day .stand-left{
+    width: 260px;
+    margin-top: 0;
+}
+.stand-banana .stand-day .stand-left h3:hover{
+    color: #00c0a5;
+    cursor: pointer;
+}
+.stand-day ul{
+    height: 31px;
+    border-bottom:2px solid #f1f2f3;
+}
+.stand-day ul>li{
+    float: left;
+    height: 24px;
+    padding: 6px 6px 3px 6px;
+}
+.stand-day ul>li:hover{
+    color: #2ab69d;
+    border-bottom: 2px solid #2ab69d;
+    cursor: pointer;
+}
+.stand-day ul>li:hover a{
+    color: #2ab69d;
+}
+.stand-day ul>li a{
+    color: #333333;
+    padding-top: 7px;
+    line-height: 20px;
+    text-align: center;
+}
+.stand-day ol>li a:hover{
+    color: #2ab69d;
+}
+.stand-day a{
+    color:#333333;
+}
+.stand-day ol{
+    padding-top: 12px;
+}
+.war-big ul>li .war-hide p{
+    color: #999999;
+    line-height: 28px;
+}
+.war-big ul>li .war-hide p em{
+    float: left;
+}
+.war-big ul>li .war-hide .war-hide-bid i{
+    margin-top: 2px;
+    float: left;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -421px;
+}
+.war-big ul>li .war-hide .war-hide-bid .war-hide-bid-sign{
+    display: block;
+    width: 12px;
+    height: 10px;
+    margin: 2px 6px 0 21px;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -450px;
+}
+.stand-day ol .stand-day-hug{
+    height: 50px;
+    padding-bottom: 9px;
+}
+.stand-day ol .war-day-hug{
+    padding-top: 0;
+}
+.stand-day ol .stand-day-hug img{
+    width: 90px;
+    height: 50px;
+    float: left;
+}
+.stand-day ol .stand-day-hug p{
+    float: right;
+    padding-left: 16px;
+    margin-top: -3px;
+}
+.stand-day ol .stand-day-hug p a{
+    display: block;
+    line-height: 19px;
+}
+.stand-day ol .stand-day-hug p span{
+    color: #999999;
+    display: block;
+    line-height: 19px;
+}
+.stand-day ol .stand-day-hug p .stand-day-hug-UP i{
+    width: 12px;
+    height: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 5px 0 39px;
+    background: url("../AcFun-image/sprites.png")no-repeat -15px -480px;
+}
+.stand-day ol>li a span{
+    padding: 0 17px 0 4px;
+}
+.stand-day ol>li{
+    float: left;
+    width: 260px;
+    height: 28px;
+}
+.stand-day ol>li a{
+    line-height: 28px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.stand-day .stand-check{
+    float: left;
+    margin-top: 8px;
+    display: block;
+    width: 260px;
+    height: 28px;
+    background: #eeeeee;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 1px;
+}
+.stand-day .stand-check:hover{
+    background: #e4e4e4;
+}
+.rep h3 b{
+    font-size: 18px;
+}
+.rep h3 b:hover,.stand-day .stand-left>b:hover{
+    color: #fd4c5d;
+    cursor: pointer;
+}
+.rep h3 i{
+    width: 14px;
+    height: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 4px;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -315px;
+}
+.rep h3 span{
+    width: 74px;
+    height: 22px;
+    display: inline-block;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    line-height: 22px;
+    margin-left: 16px;
+}
+.rep h3 span:hover{
+    background: #eeeeee;
+    cursor: pointer;
+}
+.stand-west .rep .rep-gt{
+    color: #fd4c5d;
+}
+.rep .rep-gt:hover{
+    color: #e61728;
+}
+.rep .rep-king b{
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    color: #e5e7ec;
+    padding:9px 9px 0;
+}
+.rep .rep-king a{
+    width: 73px;
+}
+.rep .rep-king a:hover{
+    color: #fd4c5d;
+}
+.stand-west .war-big{
+    height: 478px;
+}
+.stand-big .war{
+    width: 340px;
+    height: 278px;
+    float: left;
+    position: relative;
+}
+.stand-big .war img{
+    width: 340px;
+    height: 240px;
+}
+/*.stand-west .war-big ul{*/
+    /*width: 540px;*/
+/*}*/
+.war-big ul>li{
+    padding-left: 20px;
+    padding-right: 0;
+    float: left;
+}
+.war-big ul .war-seven{
+    padding-left: 0;
+}
+.war-big ul .war .war-note{
+    width: 340px;
+    padding: 5px 0;
+}
+.war-big ul .war .war-note a{
+    color: #333333;
+}
+.war-big ul .war .war-note a:hover{
+    color: #fd4c5d;
+}
+.war-big ul .war .war-note p{
+    color: #999999;
+}
+.war-big ul .war .war-top-set{
+    width: 340px;
+    height: 240px;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.war-big ul .war .war-top-set i{
+    display: block;
+    width: 53px;
+    height: 50px;
+    background: url("../AcFun-image/Sprites.png")no-repeat 0 -350px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+.war-big ul .war .war-top:hover .war-top-set{
+    display: block;
+    cursor: pointer;
+}
+.war-big ul .war .war-hide a{
+    height: 39px;
+}
+.war-big ul .war .war-hide a{
+    display: block;
+    width: 160px;
+    height: 39px;
+}
+.war-big ul>li .war-hide p i{
+    float: left;
+    background: url("../AcFun-image/Sprites.png")no-repeat -15px -421px;
+}
+.war-big ul>li .war-hide p .war-hide-bid{
+    background: url("../AcFun-image/S");
+}
+.war-day{
+    height: 466px;
+}
+.war-west{
+    height: 518px;
+}
+.war-day ol>li{
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.war-day ol>li a:hover{
+    color: #fd4c5d;
+}
+.war-day ol>li p .war-day-small i{
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    background: url("../AcFun-image/Sprites.png")no-repeat -16px -421px;
+    padding-left: 6px;
+    vertical-align: middle;
+}
+.war-day ol>li p .war-day-small .war-day-small-sur{
+    background-position:-15px -450px;
+    margin-left: 20px;
+}
+.shim-west{
+    height: 620px;
+}
+.shim-west .shim span{
+    float: left;
+    width: 70px;
+    height: 24px;
+    margin-top: 8px;
+}
+.shim-west .shim span a{
+    width: 70px;
+    margin-top: 0;
+}
+.shim-west .shim .shim-show{
+    padding-left: 16px;
+    width: 82px;
+    height: 24px;
+}
+.shim-west .shim .shim-show a{
+    width: 82px;
+}
+.shim-west .shim .shim-sue{
+    background: #f9e7e9;
+}
+.shim-west .shim .shim-sue a{
+    color: #fd4c5b;
+}
+.shim-west .shim-big ul>li{
+    height: 253px;
+}
+.shim-west .shim-big ul>li .shim-fac,.shim-west .shim-big ul>li .shim-fac img,.shim-west .shim-big ul>li .shim-fac .shim-fac-grey{
+    width: 160px;
+    height: 214px;
+}
+.shim-west .shim-big ul>li .shim-fac .shim-fac-grey i{
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: url("../AcFun-image/Sprites.png")no-repeat -75px -76px;
+    top: 82px;
+    left: 55px;
+}
+.shim-west .shim-big ul>li .shim-stroll p span{
+    color: #fd4c5d;
+}
+.shim-west .shim-big ul>li .shim-stroll p .shim-stroll-suit{
+    float: right;
+    color: #999999;
+}
+.shim-day{
+    height: 584px;
+}
+.shim-day .shim-left p{
+    padding-top: 9px;
+    font-size: 18px;
+}
+.shim-day .shim-day-NEW{
+    padding-top: 12px;
+}
+.shim-day a{
+    display: block;
+    padding-top: 20px;
+}
+.shim-day a img{
+    width: 260px;
+    height: 164px;
+}
+.com-west{
+    height: 364px;
+}
+.com-west .com-big{
+    height: 288px;
+}
+.com-west .com-big ul>li{
+    padding-left:0;
+    padding-right: 20px;
+}
+.com-west .com-big ul .com-big-bot{
+    margin-bottom: 0;
+}
+.com-day{
+    height: 327px;
+}
+.FMP a img{
+    width: 570px;
+    height: 100px;
+}
+.FMP .FMP-mer{
+    margin-top: 50px;
+    float: left;
+}
+.FMP .FMP-who{
+    margin-top: 50px;
+    float: right;
+}
+.AcFun-foot{
+    width: 100%;
+    height: 299px;
+    background: #ececec;
+}
+.AcFun-cent .cent-top{
+    height: 86px;
+    padding: 20px 0;
+}
+.AcFun-cent .cent-top h5{
+    color: #b5b5b5;
+}
+.AcFun-cent .cent-top a{
+    color: #333333;
+}
+.cent-top-coll{
+    height: 86px;
+    padding-right: 46px;
+    border-right: 1px solid #e5e5e5;
+    float: left;
+}
+.cent-top h5{
+    line-height: 30px;
+}
+.cent-top p a{
+    line-height: 30px;
+    padding-right: 24px;
+}
+.cent-top-coll p .cent-top-coll-tou{
+    padding-right: 0;
+}
+.cent-top-off{
+    height: 86px;
+    float: left;
+    padding: 0 46px;
+    border-right:1px solid #e5e5e5;
+}
+.cent-top-dow{
+    height: 86px;
+    float: left;
+    padding: 0 46px;
+    border-right:1px solid #e5e5e5;
+}
+.cent-top-dow p a{
+    padding-right: 2px;
+}
+.cent-top-dow p span{
+    width: 28px;
+    height: 12px;
+    color: #ffffff;
+    background: #fd4c5d;
+    border-radius: 5px;
+}
+.cent-top-ship{
+    height: 86px;
+    float: left;
+    padding: 0 46px;
+    border-right:1px solid #e5e5e5;
+}
+.cent-top-ship .cent-top-ship-AC{
+    padding-right: 0;
+}
+.cent-top-feed{
+    float: left;
+    padding-left: 46px;
+}
+.cent-top img{
+    width: 80px;
+    height: 80px;
+    float: right;
+}
+.cent-nav{
+    height: 74px;
+    padding: 15px 0 26px 0;
+}
+.cent-nav a,.cent-nav span{
+    color: #999999;
+    line-height: 24px;
+}
+.cent-nav-cul{
+    width: 133px;
+    height: 74px;
+    float: left;
+}
+.cent-nav-cul i{
+    width: 16px;
+    height: 13px;
+    display: inline-block;
+    padding-left: 8px;
+    background: url("../AcFun-image/Sprites.png")no-repeat -75px -15px;
+    vertical-align: middle;
+}
+.cent-nav-cul .cent-nav-cul-her{
+    width: 16px;
+    height: 16px;
+    background-position: -75px -45px;
+}
+.cent-nav-ICP{
+    float: left;
+    height: 74px;
+    padding-left: 84px;
+}
+.cent-nav-make{
+    float: left;
+    padding-left: 61px;
+}
+.cent-gray{
+    height: 24px;
+}
+.cent-gray img{
+    display: block;
+    width: 78px;
+    height: 24px;
+    margin: 0 auto;
+    padding-bottom: 14px;
+}
+.cent-gray .cent-gray-complete{
+    text-align: center;
+    color: #b5b5b5;
+}
+
+
+
+
+
+
+
+
+
+
+
